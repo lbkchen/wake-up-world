@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jft-MS-8fD">
+                            <datePicker contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jft-MS-8fD">
                                 <rect key="frame" x="-1" y="143" width="416" height="281"/>
-                                <date key="date" timeIntervalSinceReferenceDate="481867174.77898097">
-                                    <!--2016-04-09 03:59:34 +0000-->
+                                <date key="date" timeIntervalSinceReferenceDate="495086374.77898097">
+                                    <!--2016-09-09 03:59:34 +0000-->
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAc-99-jo7">
@@ -28,7 +28,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Cancel">
-                                    <color key="titleColor" red="0.0" green="0.71372549019607845" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.13725490196078433" green="0.79607843137254897" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="cancelAlarm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osB-3r-fSi"/>
@@ -42,7 +42,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eto-ty-wm9">
                                 <rect key="frame" x="83" y="466" width="249" height="69"/>
-                                <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.65098039215686276" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <state key="normal" title="Set Alarm">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.12549019610000001" green="0.7725490196" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.79607843137254897" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
