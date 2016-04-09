@@ -12,7 +12,7 @@ class GoodNightViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "goodnightnb.png")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "goodnight6.png")!)
         self.navigationController!.navigationBar.hidden = true
         // Do any additional setup after loading the view.
     }

@@ -10,10 +10,13 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    @IBOutlet weak var contributionAmount: UILabel!
+    @IBOutlet weak var contributionAmountSlider: UISlider!
     @IBOutlet weak var contributionAmountText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "lblue.png")!)
         // Do any additional setup after loading the view, typically from a nib.
 //        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "goodnight.png")!)
     }
@@ -21,6 +24,12 @@ class StartViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func draggedContributionSlider(sender: UISlider) {
+        let currentValue = Double(sender.value)
+        let truncated = truncate(currentValue, precision : 2);
+        contributionAmount.text = "$ \(truncated)"
     }
 
     /* Begin model stuff */
@@ -34,6 +43,12 @@ class StartViewController: UIViewController {
             }
         }
     }
+    
+    func truncate(number: Double, precision: Int) -> Double {
+        return Double(round(pow(10.0, Double(precision)) * number)/(pow(10.0, Double(precision))))
+    }
+    
+    
     /* End model stuff */
 }
 
