@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8450DE5C1CB8BB6E00D4DD33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE5B1CB8BB6E00D4DD33 /* AppDelegate.swift */; };
+		8450DE5E1CB8BB6E00D4DD33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE5D1CB8BB6E00D4DD33 /* ViewController.swift */; };
+		8450DE611CB8BB6E00D4DD33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8450DE5F1CB8BB6E00D4DD33 /* Main.storyboard */; };
+		8450DE631CB8BB6E00D4DD33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8450DE621CB8BB6E00D4DD33 /* Assets.xcassets */; };
+		8450DE661CB8BB6E00D4DD33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8450DE641CB8BB6E00D4DD33 /* LaunchScreen.storyboard */; };
+		8450DE711CB8BB6E00D4DD33 /* wakeupworldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE701CB8BB6E00D4DD33 /* wakeupworldTests.swift */; };
+		8450DE7C1CB8BB6E00D4DD33 /* wakeupworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE7B1CB8BB6E00D4DD33 /* wakeupworldUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8450DE6D1CB8BB6E00D4DD33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8450DE501CB8BB6E00D4DD33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8450DE571CB8BB6E00D4DD33;
+			remoteInfo = wakeupworld;
+		};
+		8450DE781CB8BB6E00D4DD33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8450DE501CB8BB6E00D4DD33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8450DE571CB8BB6E00D4DD33;
+			remoteInfo = wakeupworld;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8450DE581CB8BB6E00D4DD33 /* wakeupworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wakeupworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8450DE5B1CB8BB6E00D4DD33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8450DE5D1CB8BB6E00D4DD33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8450DE601CB8BB6E00D4DD33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8450DE621CB8BB6E00D4DD33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8450DE651CB8BB6E00D4DD33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8450DE671CB8BB6E00D4DD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8450DE6C1CB8BB6E00D4DD33 /* wakeupworldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wakeupworldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8450DE701CB8BB6E00D4DD33 /* wakeupworldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wakeupworldTests.swift; sourceTree = "<group>"; };
+		8450DE721CB8BB6E00D4DD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8450DE771CB8BB6E00D4DD33 /* wakeupworldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wakeupworldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8450DE7B1CB8BB6E00D4DD33 /* wakeupworldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wakeupworldUITests.swift; sourceTree = "<group>"; };
+		8450DE7D1CB8BB6E00D4DD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8450DE551CB8BB6E00D4DD33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8450DE691CB8BB6E00D4DD33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8450DE741CB8BB6E00D4DD33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8450DE4F1CB8BB6E00D4DD33 = {
+			isa = PBXGroup;
+			children = (
+				8450DE5A1CB8BB6E00D4DD33 /* wakeupworld */,
+				8450DE6F1CB8BB6E00D4DD33 /* wakeupworldTests */,
+				8450DE7A1CB8BB6E00D4DD33 /* wakeupworldUITests */,
+				8450DE591CB8BB6E00D4DD33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8450DE591CB8BB6E00D4DD33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8450DE581CB8BB6E00D4DD33 /* wakeupworld.app */,
+				8450DE6C1CB8BB6E00D4DD33 /* wakeupworldTests.xctest */,
+				8450DE771CB8BB6E00D4DD33 /* wakeupworldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8450DE5A1CB8BB6E00D4DD33 /* wakeupworld */ = {
+			isa = PBXGroup;
+			children = (
+				8450DE5B1CB8BB6E00D4DD33 /* AppDelegate.swift */,
+				8450DE5D1CB8BB6E00D4DD33 /* ViewController.swift */,
+				8450DE5F1CB8BB6E00D4DD33 /* Main.storyboard */,
+				8450DE621CB8BB6E00D4DD33 /* Assets.xcassets */,
+				8450DE641CB8BB6E00D4DD33 /* LaunchScreen.storyboard */,
+				8450DE671CB8BB6E00D4DD33 /* Info.plist */,
+			);
+			path = wakeupworld;
+			sourceTree = "<group>";
+		};
+		8450DE6F1CB8BB6E00D4DD33 /* wakeupworldTests */ = {
+			isa = PBXGroup;
+			children = (
+				8450DE701CB8BB6E00D4DD33 /* wakeupworldTests.swift */,
+				8450DE721CB8BB6E00D4DD33 /* Info.plist */,
+			);
+			path = wakeupworldTests;
+			sourceTree = "<group>";
+		};
+		8450DE7A1CB8BB6E00D4DD33 /* wakeupworldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8450DE7B1CB8BB6E00D4DD33 /* wakeupworldUITests.swift */,
+				8450DE7D1CB8BB6E00D4DD33 /* Info.plist */,
+			);
+			path = wakeupworldUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8450DE571CB8BB6E00D4DD33 /* wakeupworld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8450DE801CB8BB6E00D4DD33 /* Build configuration list for PBXNativeTarget "wakeupworld" */;
+			buildPhases = (
+				8450DE541CB8BB6E00D4DD33 /* Sources */,
+				8450DE551CB8BB6E00D4DD33 /* Frameworks */,
+				8450DE561CB8BB6E00D4DD33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wakeupworld;
+			productName = wakeupworld;
+			productReference = 8450DE581CB8BB6E00D4DD33 /* wakeupworld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8450DE6B1CB8BB6E00D4DD33 /* wakeupworldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8450DE831CB8BB6E00D4DD33 /* Build configuration list for PBXNativeTarget "wakeupworldTests" */;
+			buildPhases = (
+				8450DE681CB8BB6E00D4DD33 /* Sources */,
+				8450DE691CB8BB6E00D4DD33 /* Frameworks */,
+				8450DE6A1CB8BB6E00D4DD33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8450DE6E1CB8BB6E00D4DD33 /* PBXTargetDependency */,
+			);
+			name = wakeupworldTests;
+			productName = wakeupworldTests;
+			productReference = 8450DE6C1CB8BB6E00D4DD33 /* wakeupworldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8450DE761CB8BB6E00D4DD33 /* wakeupworldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8450DE861CB8BB6E00D4DD33 /* Build configuration list for PBXNativeTarget "wakeupworldUITests" */;
+			buildPhases = (
+				8450DE731CB8BB6E00D4DD33 /* Sources */,
+				8450DE741CB8BB6E00D4DD33 /* Frameworks */,
+				8450DE751CB8BB6E00D4DD33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8450DE791CB8BB6E00D4DD33 /* PBXTargetDependency */,
+			);
+			name = wakeupworldUITests;
+			productName = wakeupworldUITests;
+			productReference = 8450DE771CB8BB6E00D4DD33 /* wakeupworldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8450DE501CB8BB6E00D4DD33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = wakeup;
+				TargetAttributes = {
+					8450DE571CB8BB6E00D4DD33 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					8450DE6B1CB8BB6E00D4DD33 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 8450DE571CB8BB6E00D4DD33;
+					};
+					8450DE761CB8BB6E00D4DD33 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 8450DE571CB8BB6E00D4DD33;
+					};
+				};
+			};
+			buildConfigurationList = 8450DE531CB8BB6E00D4DD33 /* Build configuration list for PBXProject "wakeupworld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8450DE4F1CB8BB6E00D4DD33;
+			productRefGroup = 8450DE591CB8BB6E00D4DD33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8450DE571CB8BB6E00D4DD33 /* wakeupworld */,
+				8450DE6B1CB8BB6E00D4DD33 /* wakeupworldTests */,
+				8450DE761CB8BB6E00D4DD33 /* wakeupworldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8450DE561CB8BB6E00D4DD33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8450DE661CB8BB6E00D4DD33 /* LaunchScreen.storyboard in Resources */,
+				8450DE631CB8BB6E00D4DD33 /* Assets.xcassets in Resources */,
+				8450DE611CB8BB6E00D4DD33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8450DE6A1CB8BB6E00D4DD33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8450DE751CB8BB6E00D4DD33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8450DE541CB8BB6E00D4DD33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8450DE5E1CB8BB6E00D4DD33 /* ViewController.swift in Sources */,
+				8450DE5C1CB8BB6E00D4DD33 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8450DE681CB8BB6E00D4DD33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8450DE711CB8BB6E00D4DD33 /* wakeupworldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8450DE731CB8BB6E00D4DD33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8450DE7C1CB8BB6E00D4DD33 /* wakeupworldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8450DE6E1CB8BB6E00D4DD33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8450DE571CB8BB6E00D4DD33 /* wakeupworld */;
+			targetProxy = 8450DE6D1CB8BB6E00D4DD33 /* PBXContainerItemProxy */;
+		};
+		8450DE791CB8BB6E00D4DD33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8450DE571CB8BB6E00D4DD33 /* wakeupworld */;
+			targetProxy = 8450DE781CB8BB6E00D4DD33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8450DE5F1CB8BB6E00D4DD33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8450DE601CB8BB6E00D4DD33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8450DE641CB8BB6E00D4DD33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8450DE651CB8BB6E00D4DD33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8450DE7E1CB8BB6E00D4DD33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8450DE7F1CB8BB6E00D4DD33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8450DE811CB8BB6E00D4DD33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = wakeupworld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakeup.wakeupworld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8450DE821CB8BB6E00D4DD33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = wakeupworld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakeup.wakeupworld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8450DE841CB8BB6E00D4DD33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = wakeupworldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakeup.wakeupworldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wakeupworld.app/wakeupworld";
+			};
+			name = Debug;
+		};
+		8450DE851CB8BB6E00D4DD33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = wakeupworldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakeup.wakeupworldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wakeupworld.app/wakeupworld";
+			};
+			name = Release;
+		};
+		8450DE871CB8BB6E00D4DD33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = wakeupworldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakeup.wakeupworldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = wakeupworld;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8450DE881CB8BB6E00D4DD33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = wakeupworldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakeup.wakeupworldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = wakeupworld;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8450DE531CB8BB6E00D4DD33 /* Build configuration list for PBXProject "wakeupworld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8450DE7E1CB8BB6E00D4DD33 /* Debug */,
+				8450DE7F1CB8BB6E00D4DD33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8450DE801CB8BB6E00D4DD33 /* Build configuration list for PBXNativeTarget "wakeupworld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8450DE811CB8BB6E00D4DD33 /* Debug */,
+				8450DE821CB8BB6E00D4DD33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8450DE831CB8BB6E00D4DD33 /* Build configuration list for PBXNativeTarget "wakeupworldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8450DE841CB8BB6E00D4DD33 /* Debug */,
+				8450DE851CB8BB6E00D4DD33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8450DE861CB8BB6E00D4DD33 /* Build configuration list for PBXNativeTarget "wakeupworldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8450DE871CB8BB6E00D4DD33 /* Debug */,
+				8450DE881CB8BB6E00D4DD33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8450DE501CB8BB6E00D4DD33 /* Project object */;
+}
