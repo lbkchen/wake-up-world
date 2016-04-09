@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		8450DE5C1CB8BB6E00D4DD33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE5B1CB8BB6E00D4DD33 /* AppDelegate.swift */; };
-		8450DE5E1CB8BB6E00D4DD33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE5D1CB8BB6E00D4DD33 /* ViewController.swift */; };
+		8450DE5E1CB8BB6E00D4DD33 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE5D1CB8BB6E00D4DD33 /* StartViewController.swift */; };
 		8450DE611CB8BB6E00D4DD33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8450DE5F1CB8BB6E00D4DD33 /* Main.storyboard */; };
 		8450DE631CB8BB6E00D4DD33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8450DE621CB8BB6E00D4DD33 /* Assets.xcassets */; };
 		8450DE661CB8BB6E00D4DD33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8450DE641CB8BB6E00D4DD33 /* LaunchScreen.storyboard */; };
 		8450DE711CB8BB6E00D4DD33 /* wakeupworldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE701CB8BB6E00D4DD33 /* wakeupworldTests.swift */; };
 		8450DE7C1CB8BB6E00D4DD33 /* wakeupworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE7B1CB8BB6E00D4DD33 /* wakeupworldUITests.swift */; };
+		84FC68F71CB8F6A000657C28 /* AlarmClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68F61CB8F6A000657C28 /* AlarmClockViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		84FC68F91CB8FCD900657C28 /* ListViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68F81CB8FCD900657C28 /* ListViewViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		84FC68FB1CB8FFD900657C28 /* GoodNightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68FA1CB8FFD900657C28 /* GoodNightViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		8450DE581CB8BB6E00D4DD33 /* wakeupworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wakeupworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8450DE5B1CB8BB6E00D4DD33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8450DE5D1CB8BB6E00D4DD33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8450DE5D1CB8BB6E00D4DD33 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		8450DE601CB8BB6E00D4DD33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8450DE621CB8BB6E00D4DD33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8450DE651CB8BB6E00D4DD33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		8450DE771CB8BB6E00D4DD33 /* wakeupworldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wakeupworldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8450DE7B1CB8BB6E00D4DD33 /* wakeupworldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wakeupworldUITests.swift; sourceTree = "<group>"; };
 		8450DE7D1CB8BB6E00D4DD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FC68F61CB8F6A000657C28 /* AlarmClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmClockViewController.swift; sourceTree = "<group>"; };
+		84FC68F81CB8FCD900657C28 /* ListViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewViewController.swift; sourceTree = "<group>"; };
+		84FC68FA1CB8FFD900657C28 /* GoodNightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodNightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				8450DE5B1CB8BB6E00D4DD33 /* AppDelegate.swift */,
-				8450DE5D1CB8BB6E00D4DD33 /* ViewController.swift */,
+				8450DE5D1CB8BB6E00D4DD33 /* StartViewController.swift */,
 				8450DE5F1CB8BB6E00D4DD33 /* Main.storyboard */,
 				8450DE621CB8BB6E00D4DD33 /* Assets.xcassets */,
 				8450DE641CB8BB6E00D4DD33 /* LaunchScreen.storyboard */,
 				8450DE671CB8BB6E00D4DD33 /* Info.plist */,
+				84FC68F61CB8F6A000657C28 /* AlarmClockViewController.swift */,
+				84FC68F81CB8FCD900657C28 /* ListViewViewController.swift */,
+				84FC68FA1CB8FFD900657C28 /* GoodNightViewController.swift */,
 			);
 			path = wakeupworld;
 			sourceTree = "<group>";
@@ -255,8 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8450DE5E1CB8BB6E00D4DD33 /* ViewController.swift in Sources */,
+				8450DE5E1CB8BB6E00D4DD33 /* StartViewController.swift in Sources */,
+				84FC68FB1CB8FFD900657C28 /* GoodNightViewController.swift in Sources */,
+				84FC68F91CB8FCD900657C28 /* ListViewViewController.swift in Sources */,
 				8450DE5C1CB8BB6E00D4DD33 /* AppDelegate.swift in Sources */,
+				84FC68F71CB8F6A000657C28 /* AlarmClockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +495,7 @@
 				8450DE821CB8BB6E00D4DD33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8450DE831CB8BB6E00D4DD33 /* Build configuration list for PBXNativeTarget "wakeupworldTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +504,7 @@
 				8450DE851CB8BB6E00D4DD33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8450DE861CB8BB6E00D4DD33 /* Build configuration list for PBXNativeTarget "wakeupworldUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +513,7 @@
 				8450DE881CB8BB6E00D4DD33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
