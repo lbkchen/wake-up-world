@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e4f-B8-ycU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e4f-B8-ycU">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -220,7 +220,7 @@
                     <navigationItem key="navigationItem" id="BqU-vZ-qac">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="0Tm-zI-qwR">
                             <connections>
-                                <segue destination="0i9-hu-SrN" kind="presentation" id="Rsm-So-7Ul"/>
+                                <segue destination="fZh-zg-u3E" kind="presentation" id="amy-Je-k3o"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -228,48 +228,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w9i-cb-7Cg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1070" y="387"/>
-        </scene>
-        <!--Alarm Clock View Controller-->
-        <scene sceneID="Z0u-Ld-xNQ">
-            <objects>
-                <viewController id="wc1-ph-JX6" customClass="AlarmClockViewController" customModule="wakeupworld" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XXT-3h-ZP0"/>
-                        <viewControllerLayoutGuide type="bottom" id="bI3-La-G2z"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zES-7r-gar">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I would like to wake up at ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxD-Nl-NDa">
-                                <rect key="frame" x="20" y="72" width="560" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EN-OV-ffI">
-                                <rect key="frame" x="216" y="514" width="169" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="good night :)"/>
-                                <connections>
-                                    <segue destination="JDt-QY-QcX" kind="presentation" id="4du-gv-RFP"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="2EN-OV-ffI" firstAttribute="centerX" secondItem="zES-7r-gar" secondAttribute="centerX" id="90f-pw-Eiq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uxD-Nl-NDa" secondAttribute="trailing" id="VJg-jf-zEe"/>
-                            <constraint firstItem="uxD-Nl-NDa" firstAttribute="top" secondItem="XXT-3h-ZP0" secondAttribute="bottom" constant="8" id="W7r-8k-bbl"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="uxD-Nl-NDa" secondAttribute="leading" id="iEQ-U7-8P0"/>
-                            <constraint firstItem="bI3-La-G2z" firstAttribute="top" secondItem="2EN-OV-ffI" secondAttribute="bottom" constant="38" id="oAE-yi-z98"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="be0-aP-PzC"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yKi-yp-iXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1802" y="387"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="er9-sa-j2g">
@@ -298,11 +256,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Dg5-h8-i2p"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V1W-Ec-pjm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TL5-Q7-lSz">
-                                <rect key="frame" x="215" y="456" width="171" height="67"/>
+                                <rect key="frame" x="103" y="456" width="209" height="67"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.45098039215686275" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="rfC-Rl-vyP"/>
@@ -317,7 +275,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="GgS-82-Hnh" kind="unwind" unwindAction="cancelToAlarmClockViewController:" id="xzH-ak-Nxt"/>
+                                    <segue destination="GgS-82-Hnh" kind="unwind" unwindAction="cancelToAlarmClockViewController:" id="OJu-Ue-4d8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -343,7 +301,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qif-dT-8uV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="GgS-82-Hnh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2532" y="387"/>
+            <point key="canvasLocation" x="2532" y="455"/>
         </scene>
         <!--Story View Controller-->
         <scene sceneID="h6F-Uz-wFg">
@@ -361,25 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xuj-CN-FkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4044" y="387"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="U13-bv-XGK">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0i9-hu-SrN" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aLe-PL-4Qj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="wc1-ph-JX6" kind="relationship" relationship="rootViewController" id="8zh-34-mLu"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="98J-gY-x9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1802" y="-361"/>
+            <point key="canvasLocation" x="3258" y="77"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VrR-RH-skT">
@@ -397,7 +337,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dnV-sg-GQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2532" y="-361"/>
+            <point key="canvasLocation" x="2532" y="-429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2yv-8f-h7A">
@@ -416,6 +356,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVU-dd-5xM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="326" y="-361"/>
+        </scene>
+        <!--Alarm Clock View Controller-->
+        <scene sceneID="Mbs-68-1lL">
+            <objects>
+                <viewController id="Zet-El-8su" customClass="AlarmClockViewController" customModule="wakeupworld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nhD-Jy-rI0"/>
+                        <viewControllerLayoutGuide type="bottom" id="QN2-Z1-iDp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="7WR-zL-9Vf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="k0j-Uf-86H">
+                                <rect key="frame" x="-1" y="143" width="416" height="281"/>
+                                <date key="date" timeIntervalSinceReferenceDate="495086374.77898097">
+                                    <!--2016-09-09 03:59:34 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIl-jN-eT0">
+                                <rect key="frame" x="135" y="565" width="144" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="canceltoAlarmClockViewController"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.13725490200000001" green="0.79607843140000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Swh-c5-Ow9" kind="unwind" unwindAction="cancelToListViewViewController:" id="G55-lO-jF7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MM/DD/YY HH:MM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8r-W8-iSv">
+                                <rect key="frame" x="96" y="85" width="222" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGT-od-wd0">
+                                <rect key="frame" x="83" y="466" width="249" height="69"/>
+                                <color key="backgroundColor" red="1" green="0.65098039220000004" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <state key="normal" title="Set Alarm">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setAlarm:" destination="Zet-El-8su" eventType="touchUpInside" id="Pl4-aF-efZ"/>
+                                    <segue destination="JDt-QY-QcX" kind="presentation" identifier="setAlarmSegue" id="Zz3-je-aQO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.79607843140000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XdX-fg-Ndl"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="x8r-W8-iSv" id="Wes-qh-aW3"/>
+                        <outlet property="datePicker" destination="k0j-Uf-86H" id="Ad2-NC-LwZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwL-91-IiX" sceneMemberID="firstResponder"/>
+                <exit id="Swh-c5-Ow9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6bv-F3-tbk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fZh-zg-u3E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bZ8-Tv-G35">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zet-El-8su" kind="relationship" relationship="rootViewController" id="XbQ-tq-AgX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QjT-Gn-51u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="-361"/>
         </scene>
     </scenes>
 </document>
