@@ -19,6 +19,7 @@
 		84FC68FB1CB8FFD900657C28 /* GoodNightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68FA1CB8FFD900657C28 /* GoodNightViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		84FC68FD1CB9166E00657C28 /* TestSlider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC68FC1CB9166E00657C28 /* TestSlider.storyboard */; settings = {ASSET_TAGS = (); }; };
 		84FC68FF1CB93D1C00657C28 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		84FC69011CB945CD00657C28 /* WakeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC69001CB945CD00657C28 /* WakeButton.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		84FC68FA1CB8FFD900657C28 /* GoodNightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodNightViewController.swift; sourceTree = "<group>"; };
 		84FC68FC1CB9166E00657C28 /* TestSlider.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestSlider.storyboard; sourceTree = "<group>"; };
 		84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		84FC69001CB945CD00657C28 /* WakeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WakeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				8450DE5B1CB8BB6E00D4DD33 /* AppDelegate.swift */,
 				8450DE5D1CB8BB6E00D4DD33 /* StartViewController.swift */,
+				84FC69001CB945CD00657C28 /* WakeButton.swift */,
 				8450DE5F1CB8BB6E00D4DD33 /* Main.storyboard */,
 				8450DE621CB8BB6E00D4DD33 /* Assets.xcassets */,
 				8450DE641CB8BB6E00D4DD33 /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 			files = (
 				84FC68FF1CB93D1C00657C28 /* StoryViewController.swift in Sources */,
 				8450DE5E1CB8BB6E00D4DD33 /* StartViewController.swift in Sources */,
+				84FC69011CB945CD00657C28 /* WakeButton.swift in Sources */,
 				84FC68FB1CB8FFD900657C28 /* GoodNightViewController.swift in Sources */,
 				84FC68F91CB8FCD900657C28 /* ListViewViewController.swift in Sources */,
 				8450DE5C1CB8BB6E00D4DD33 /* AppDelegate.swift in Sources */,
