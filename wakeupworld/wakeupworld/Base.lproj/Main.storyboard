@@ -24,6 +24,11 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="$ 0.0" textAlignment="center" minimumFontSize="60" translatesAutoresizingMaskIntoConstraints="NO" id="QX7-AN-eDG">
+                                <rect key="frame" x="99" y="238" width="402" height="124"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zh-Y5-DOi">
                                 <rect key="frame" x="256" y="487" width="88" height="63"/>
                                 <color key="backgroundColor" white="0.92793631553649902" alpha="1" colorSpace="calibratedWhite"/>
@@ -33,11 +38,15 @@
                                     <segue destination="Ob7-47-wgu" kind="presentation" id="rnT-HW-TWw"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="$ 0.0" textAlignment="center" minimumFontSize="60" translatesAutoresizingMaskIntoConstraints="NO" id="QX7-AN-eDG">
-                                <rect key="frame" x="99" y="238" width="402" height="124"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9am-Zf-K1q">
+                                <rect key="frame" x="99" y="419" width="403" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCZ-cj-psL">
+                                <rect key="frame" x="279" y="189" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -213,17 +222,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GOOD NIGHT BRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4A-ft-VTW">
-                                <rect key="frame" x="102" y="185" width="397" height="74"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TL5-Q7-lSz">
-                                <rect key="frame" x="238" y="445" width="125" height="78"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Cancel"/>
+                                <rect key="frame" x="192" y="456" width="216" height="67"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.45098039215686275" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="rfC-Rl-vyP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rfC-Rl-vyP"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="GgS-82-Hnh" kind="unwind" unwindAction="cancelToAlarmClockViewController:" id="xzH-ak-Nxt"/>
                                 </connections>
@@ -231,11 +244,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Dg5-h8-i2p" firstAttribute="top" secondItem="TL5-Q7-lSz" secondAttribute="bottom" constant="77" id="iS7-3S-3n8"/>
-                            <constraint firstItem="TL5-Q7-lSz" firstAttribute="centerX" secondItem="V1W-Ec-pjm" secondAttribute="centerX" id="j8v-Dh-naE"/>
-                            <constraint firstItem="a4A-ft-VTW" firstAttribute="top" secondItem="Vdh-t9-LjN" secondAttribute="bottom" constant="121" id="pwt-uj-ea6"/>
-                            <constraint firstItem="a4A-ft-VTW" firstAttribute="centerX" secondItem="V1W-Ec-pjm" secondAttribute="centerX" id="rC0-qf-vut"/>
+                            <constraint firstItem="Dg5-h8-i2p" firstAttribute="top" secondItem="TL5-Q7-lSz" secondAttribute="bottom" constant="77" id="BxZ-eE-PxV"/>
+                            <constraint firstItem="TL5-Q7-lSz" firstAttribute="top" secondItem="Vdh-t9-LjN" secondAttribute="bottom" constant="392" id="m3I-dO-Y0o"/>
+                            <constraint firstItem="TL5-Q7-lSz" firstAttribute="width" secondItem="V1W-Ec-pjm" secondAttribute="height" multiplier="9:25" id="olY-8Y-eB7"/>
+                            <constraint firstItem="TL5-Q7-lSz" firstAttribute="width" secondItem="V1W-Ec-pjm" secondAttribute="height" multiplier="79:200" id="qpz-y1-8vC"/>
+                            <constraint firstItem="TL5-Q7-lSz" firstAttribute="centerX" secondItem="V1W-Ec-pjm" secondAttribute="centerX" id="tjZ-r9-vuf"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="m3I-dO-Y0o"/>
+                                <exclude reference="qpz-y1-8vC"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="r6R-Sa-i7F"/>
                 </viewController>
@@ -243,6 +263,24 @@
                 <exit id="GgS-82-Hnh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2532" y="387"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="h6F-Uz-wFg">
+            <objects>
+                <viewController id="s0L-X7-npd" customClass="StoryViewController" customModule="wakeupworld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="knt-fT-G5c"/>
+                        <viewControllerLayoutGuide type="bottom" id="xsl-6a-Mq9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EJI-5s-tgN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xuj-CN-FkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3232" y="387"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="U13-bv-XGK">
