@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F44BA251CB94A96005057E7 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F44BA241CB94A96005057E7 /* sound.mp3 */; };
+		1F44BA271CB94B5C005057E7 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F44BA261CB94B5C005057E7 /* alarm_sound.mp3 */; };
+		1F44BA291CB95086005057E7 /* sweet_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F44BA281CB95086005057E7 /* sweet_sound.mp3 */; };
 		1FBF542B1CB8B057000954FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF542A1CB8B057000954FB /* AppDelegate.swift */; };
 		1FBF542D1CB8B057000954FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF542C1CB8B057000954FB /* ViewController.swift */; };
 		1FBF54301CB8B057000954FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF542E1CB8B057000954FB /* Main.storyboard */; };
 		1FBF54321CB8B057000954FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF54311CB8B057000954FB /* Assets.xcassets */; };
 		1FBF54351CB8B057000954FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF54331CB8B057000954FB /* LaunchScreen.storyboard */; };
 		1FBF543E1CB8B13B000954FB /* alarm_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF543D1CB8B13B000954FB /* alarm_image.jpg */; };
-		1FBF54401CB8B155000954FB /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF543F1CB8B155000954FB /* alarm_sound.mp3 */; };
 		1FBF54461CB8EC0C000954FB /* SourceFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF54451CB8EC0C000954FB /* SourceFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F44BA241CB94A96005057E7 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sound.mp3; path = ../../../sound.mp3; sourceTree = "<group>"; };
+		1F44BA261CB94B5C005057E7 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm_sound.mp3; path = ../../../alarm_sound.mp3; sourceTree = "<group>"; };
+		1F44BA281CB95086005057E7 /* sweet_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sweet_sound.mp3; path = ../../../sweet_sound.mp3; sourceTree = "<group>"; };
 		1FBF54271CB8B057000954FB /* Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FBF542A1CB8B057000954FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FBF542C1CB8B057000954FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +31,6 @@
 		1FBF54341CB8B057000954FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FBF54361CB8B057000954FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FBF543D1CB8B13B000954FB /* alarm_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = alarm_image.jpg; path = ../../../alarm_image.jpg; sourceTree = "<group>"; };
-		1FBF543F1CB8B155000954FB /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm_sound.mp3; path = ../../../../Downloads/alarm_sound.mp3; sourceTree = "<group>"; };
 		1FBF54451CB8EC0C000954FB /* SourceFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +79,9 @@
 		1FBF543C1CB8B11E000954FB /* supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				1FBF543F1CB8B155000954FB /* alarm_sound.mp3 */,
+				1F44BA281CB95086005057E7 /* sweet_sound.mp3 */,
+				1F44BA261CB94B5C005057E7 /* alarm_sound.mp3 */,
+				1F44BA241CB94A96005057E7 /* sound.mp3 */,
 				1FBF543D1CB8B13B000954FB /* alarm_image.jpg */,
 			);
 			name = "supporting files";
@@ -141,10 +147,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FBF54351CB8B057000954FB /* LaunchScreen.storyboard in Resources */,
-				1FBF54401CB8B155000954FB /* alarm_sound.mp3 in Resources */,
 				1FBF543E1CB8B13B000954FB /* alarm_image.jpg in Resources */,
 				1FBF54321CB8B057000954FB /* Assets.xcassets in Resources */,
+				1F44BA291CB95086005057E7 /* sweet_sound.mp3 in Resources */,
 				1FBF54301CB8B057000954FB /* Main.storyboard in Resources */,
+				1F44BA271CB94B5C005057E7 /* alarm_sound.mp3 in Resources */,
+				1F44BA251CB94A96005057E7 /* sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +323,7 @@
 				1FBF543B1CB8B057000954FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

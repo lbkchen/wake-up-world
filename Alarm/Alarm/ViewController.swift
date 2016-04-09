@@ -8,6 +8,9 @@
 
 import UIKit
 
+import SpriteKit
+import AVFoundation
+
 class ViewController: UIViewController {
     
     @IBOutlet var datePicker: UIDatePicker!
@@ -32,8 +35,7 @@ class ViewController: UIViewController {
     func datePickerChanged(datePicker:UIDatePicker) {
         let dateFormatter = NSDateFormatter()
         
-        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
-        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        dateFormatter.dateFormat = "HH:mm"
         
         let strDate = dateFormatter.stringFromDate(datePicker.date)
         dateLabel.text = strDate
@@ -49,9 +51,10 @@ class ViewController: UIViewController {
     @IBAction func setAlarm(sender: UIButton!) {
         let dateFormatter = NSDateFormatter()
         dateFormatter.timeZone = NSTimeZone.defaultTimeZone()
-        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+        dateFormatter.dateFormat = "HH:mm"
         scheduleLocalNotificationWDate(datePicker.date)
         presentMessage("Alarm set. Good night!")
+        //add link to GOOD NIGHT board here
     }
     
     @IBAction func cancelAlarm(sender: UIButton!) {
@@ -60,7 +63,7 @@ class ViewController: UIViewController {
     }
     
     func snoozeAlarm() {
-        let date = NSDate().dateByAddingTimeInterval(1 * 60)
+        let date = NSDate().dateByAddingTimeInterval(0.1 * 60)
         scheduleLocalNotificationWDate(date)
     }
     
@@ -68,7 +71,7 @@ class ViewController: UIViewController {
         let notification = UILocalNotification()
         notification.fireDate = fireDate
         notification.alertBody = "Good morning! Ready to wake up?"
-        notification.soundName = "alarm_sound.mp3"
+        notification.soundName = "sweet_sound.mp3"
         notification.category = "FIRST_CATEGORY"
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
@@ -83,9 +86,5 @@ class ViewController: UIViewController {
         alert.addAction(action)
         self.presentViewController(alert, animated: true){}
     }
-    
-    
-    
-    
 }
 
