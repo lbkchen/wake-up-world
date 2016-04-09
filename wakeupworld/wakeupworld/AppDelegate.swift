@@ -15,8 +15,58 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        let awakeAction:UIMutableUserNotificationAction = UIMutableUserNotificationAction()
+        awakeAction.identifier = "Awake"
+        awakeAction.title = "I'm up!"
+        
+        awakeAction.activationMode = UIUserNotificationActivationMode.Foreground
+        awakeAction.destructive = true
+        awakeAction.authenticationRequired = false
+        
+        let snoozeAction:UIMutableUserNotificationAction = UIMutableUserNotificationAction()
+        snoozeAction.identifier = "Snooze"
+        snoozeAction.title = "10 more minutes"
+        
+        snoozeAction.activationMode = UIUserNotificationActivationMode.Background
+        snoozeAction.destructive = false
+        snoozeAction.authenticationRequired = false
+        
+        
+        // category
+        
+        let firstCategory:UIMutableUserNotificationCategory = UIMutableUserNotificationCategory()
+        firstCategory.identifier = "FIRST_CATEGORY"
+        
+        firstCategory.setActions([awakeAction, snoozeAction], forContext: UIUserNotificationActionContext.Default)
+        firstCategory.setActions([awakeAction, snoozeAction], forContext: UIUserNotificationActionContext.Minimal)
+        
+        // NSSet of all our categories
+        let mySettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: Set(arrayLiteral: firstCategory))
+        
+        UIApplication.sharedApplication().registerUserNotificationSettings(mySettings)
         // Override point for customization after application launch.
         return true
+    }
+    
+    func application(application: UIApplication,
+                     handleActionWithIdentifier identifier:String?,
+                                                forLocalNotification notification:UILocalNotification,
+                                                                     completionHandler: (() -> Void))
+    {
+        
+        if (identifier == "Awake")
+        {
+            NSNotificationCenter.defaultCenter().postNotificationName("awakePressed", object: nil)
+        }
+        else if (identifier == "Snooze")
+        {
+            let vc = AlarmClockViewController()
+            vc.snoozeAlarm()
+            NSNotificationCenter.defaultCenter().postNotificationName("snoozePressed", object: nil)
+        }
+        
+        completionHandler()
     }
 
     func applicationWillResignActive(application: UIApplication) {
