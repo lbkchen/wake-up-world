@@ -17,6 +17,7 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "lblue.png")!)
+        self.navigationController!.navigationBar.hidden = true
         // Do any additional setup after loading the view, typically from a nib.
 //        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "goodnight.png")!)
     }

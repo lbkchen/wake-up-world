@@ -20,6 +20,7 @@
 		84FC68FD1CB9166E00657C28 /* TestSlider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC68FC1CB9166E00657C28 /* TestSlider.storyboard */; settings = {ASSET_TAGS = (); }; };
 		84FC68FF1CB93D1C00657C28 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		84FC69011CB945CD00657C28 /* WakeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC69001CB945CD00657C28 /* WakeButton.swift */; settings = {ASSET_TAGS = (); }; };
+		84FC69031CB9791600657C28 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC69021CB9791600657C28 /* LaunchViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		84FC68FC1CB9166E00657C28 /* TestSlider.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestSlider.storyboard; sourceTree = "<group>"; };
 		84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		84FC69001CB945CD00657C28 /* WakeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WakeButton.swift; sourceTree = "<group>"; };
+		84FC69021CB9791600657C28 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				84FC68FA1CB8FFD900657C28 /* GoodNightViewController.swift */,
 				84FC68FC1CB9166E00657C28 /* TestSlider.storyboard */,
 				84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */,
+				84FC69021CB9791600657C28 /* LaunchViewController.swift */,
 			);
 			path = wakeupworld;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				84FC68F91CB8FCD900657C28 /* ListViewViewController.swift in Sources */,
 				8450DE5C1CB8BB6E00D4DD33 /* AppDelegate.swift in Sources */,
 				84FC68F71CB8F6A000657C28 /* AlarmClockViewController.swift in Sources */,
+				84FC69031CB9791600657C28 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
