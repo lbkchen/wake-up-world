@@ -17,6 +17,8 @@
 		84FC68F71CB8F6A000657C28 /* AlarmClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68F61CB8F6A000657C28 /* AlarmClockViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		84FC68F91CB8FCD900657C28 /* ListViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68F81CB8FCD900657C28 /* ListViewViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		84FC68FB1CB8FFD900657C28 /* GoodNightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68FA1CB8FFD900657C28 /* GoodNightViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		84FC68FD1CB9166E00657C28 /* TestSlider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC68FC1CB9166E00657C28 /* TestSlider.storyboard */; settings = {ASSET_TAGS = (); }; };
+		84FC68FF1CB93D1C00657C28 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		84FC68F61CB8F6A000657C28 /* AlarmClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmClockViewController.swift; sourceTree = "<group>"; };
 		84FC68F81CB8FCD900657C28 /* ListViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewViewController.swift; sourceTree = "<group>"; };
 		84FC68FA1CB8FFD900657C28 /* GoodNightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodNightViewController.swift; sourceTree = "<group>"; };
+		84FC68FC1CB9166E00657C28 /* TestSlider.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestSlider.storyboard; sourceTree = "<group>"; };
+		84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				84FC68F61CB8F6A000657C28 /* AlarmClockViewController.swift */,
 				84FC68F81CB8FCD900657C28 /* ListViewViewController.swift */,
 				84FC68FA1CB8FFD900657C28 /* GoodNightViewController.swift */,
+				84FC68FC1CB9166E00657C28 /* TestSlider.storyboard */,
+				84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */,
 			);
 			path = wakeupworld;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 				8450DE661CB8BB6E00D4DD33 /* LaunchScreen.storyboard in Resources */,
 				8450DE631CB8BB6E00D4DD33 /* Assets.xcassets in Resources */,
 				8450DE611CB8BB6E00D4DD33 /* Main.storyboard in Resources */,
+				84FC68FD1CB9166E00657C28 /* TestSlider.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FC68FF1CB93D1C00657C28 /* StoryViewController.swift in Sources */,
 				8450DE5E1CB8BB6E00D4DD33 /* StartViewController.swift in Sources */,
 				84FC68FB1CB8FFD900657C28 /* GoodNightViewController.swift in Sources */,
 				84FC68F91CB8FCD900657C28 /* ListViewViewController.swift in Sources */,

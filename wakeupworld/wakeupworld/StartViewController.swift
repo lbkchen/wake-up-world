@@ -22,6 +22,17 @@ class StartViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    /* Begin model stuff */
+    func convertMoneyInput(typed : String) {
+        for chr in typed.characters {
+            if (!(chr >= "0" && chr <= "9") && chr != ".") {
+                let alertController = UIAlertController(title: "That's not a valid number!", message:
+                    "Please enter a valid ", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
+            }
+        }
+    }
+    /* End model stuff */
 }
 
