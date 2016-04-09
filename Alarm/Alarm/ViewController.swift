@@ -22,7 +22,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        datePicker.addTarget(self, action: #selector(ViewController.datePickerChanged(_:)), forControlEvents: UIControlEvents.ValueChanged)
+//        datePicker.addTarget(self, action: selector(ViewController.datePickerChanged), forControlEvents: UIControlEvents.ValueChanged)
+        datePicker.addTarget(self, action: Selector(ViewController.datePickerChanged), forControlEvents: UIControlEvents.ValueChanged)
+
         setAlarm.backgroundColor = UIColor(red: 255/255, green: 171/255, blue: 0/255, alpha: 1)
         cancelAlarm.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
             }
