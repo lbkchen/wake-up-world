@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F8CC3C21CB9D9930018672B /* final.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F8CC3C11CB9D9930018672B /* final.png */; };
+		1FA721461CB9AEAB0081BB81 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA721451CB9AEAB0081BB81 /* SwiftyJSON.framework */; };
+		1FA721481CB9B1DA0081BB81 /* watsi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FA721471CB9B1DA0081BB81 /* watsi.json */; };
 		1FC531CC1CB9A9A70080A133 /* sweet_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FC531CB1CB9A9A70080A133 /* sweet_sound.mp3 */; };
 		8450DE5C1CB8BB6E00D4DD33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE5B1CB8BB6E00D4DD33 /* AppDelegate.swift */; };
 		8450DE5E1CB8BB6E00D4DD33 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE5D1CB8BB6E00D4DD33 /* StartViewController.swift */; };
@@ -22,6 +25,7 @@
 		84FC68FF1CB93D1C00657C28 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */; };
 		84FC69011CB945CD00657C28 /* WakeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC69001CB945CD00657C28 /* WakeButton.swift */; };
 		84FC69031CB9791600657C28 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC69021CB9791600657C28 /* LaunchViewController.swift */; };
+		928BE66A60DD80667746D5E6 /* Pods_wakeupworld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F15A1418F838DAE9CBED2C8 /* Pods_wakeupworld.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F8CC3C11CB9D9930018672B /* final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = final.png; path = ../../../final.png; sourceTree = "<group>"; };
+		1FA721451CB9AEAB0081BB81 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/wakeupworld-hgfdzhtdirkezpcyuboycorahukl/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		1FA721471CB9B1DA0081BB81 /* watsi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = watsi.json; path = ../../JSOn/JSON/watsi.json; sourceTree = "<group>"; };
 		1FC531CB1CB9A9A70080A133 /* sweet_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sweet_sound.mp3; path = ../../../sweet_sound.mp3; sourceTree = "<group>"; };
+		6F15A1418F838DAE9CBED2C8 /* Pods_wakeupworld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wakeupworld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		774D178F397679B2AF95C629 /* Pods-wakeupworld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeupworld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wakeupworld/Pods-wakeupworld.debug.xcconfig"; sourceTree = "<group>"; };
 		8450DE581CB8BB6E00D4DD33 /* wakeupworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wakeupworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8450DE5B1CB8BB6E00D4DD33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8450DE5D1CB8BB6E00D4DD33 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +72,7 @@
 		84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		84FC69001CB945CD00657C28 /* WakeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WakeButton.swift; sourceTree = "<group>"; };
 		84FC69021CB9791600657C28 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		DF523C3EC76E6D8ACC0590CD /* Pods-wakeupworld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeupworld.release.xcconfig"; path = "Pods/Target Support Files/Pods-wakeupworld/Pods-wakeupworld.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA721461CB9AEAB0081BB81 /* SwiftyJSON.framework in Frameworks */,
+				928BE66A60DD80667746D5E6 /* Pods_wakeupworld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +110,15 @@
 			name = support;
 			sourceTree = "<group>";
 		};
+		2F16D9D5EDD68660FD455DED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				774D178F397679B2AF95C629 /* Pods-wakeupworld.debug.xcconfig */,
+				DF523C3EC76E6D8ACC0590CD /* Pods-wakeupworld.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8450DE4F1CB8BB6E00D4DD33 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +126,8 @@
 				8450DE6F1CB8BB6E00D4DD33 /* wakeupworldTests */,
 				8450DE7A1CB8BB6E00D4DD33 /* wakeupworldUITests */,
 				8450DE591CB8BB6E00D4DD33 /* Products */,
+				2F16D9D5EDD68660FD455DED /* Pods */,
+				997DDAE2C22704DB2BB9418F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +148,7 @@
 				8450DE5D1CB8BB6E00D4DD33 /* StartViewController.swift */,
 				84FC69001CB945CD00657C28 /* WakeButton.swift */,
 				8450DE5F1CB8BB6E00D4DD33 /* Main.storyboard */,
+				1FA721471CB9B1DA0081BB81 /* watsi.json */,
 				8450DE621CB8BB6E00D4DD33 /* Assets.xcassets */,
 				8450DE641CB8BB6E00D4DD33 /* LaunchScreen.storyboard */,
 				8450DE671CB8BB6E00D4DD33 /* Info.plist */,
@@ -134,6 +158,7 @@
 				84FC68FC1CB9166E00657C28 /* TestSlider.storyboard */,
 				84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */,
 				84FC69021CB9791600657C28 /* LaunchViewController.swift */,
+				1F8CC3C11CB9D9930018672B /* final.png */,
 				1FC531CA1CB9A98F0080A133 /* support */,
 			);
 			path = wakeupworld;
@@ -157,6 +182,15 @@
 			path = wakeupworldUITests;
 			sourceTree = "<group>";
 		};
+		997DDAE2C22704DB2BB9418F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FA721451CB9AEAB0081BB81 /* SwiftyJSON.framework */,
+				6F15A1418F838DAE9CBED2C8 /* Pods_wakeupworld.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8450DE801CB8BB6E00D4DD33 /* Build configuration list for PBXNativeTarget "wakeupworld" */;
 			buildPhases = (
+				DBFED738C8F38E23C2BA691F /* Check Pods Manifest.lock */,
 				8450DE541CB8BB6E00D4DD33 /* Sources */,
 				8450DE551CB8BB6E00D4DD33 /* Frameworks */,
 				8450DE561CB8BB6E00D4DD33 /* Resources */,
+				2E265674250A42806B944DF3 /* Embed Pods Frameworks */,
+				8B12B9E39E430EE70296C0C6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,6 +261,7 @@
 				TargetAttributes = {
 					8450DE571CB8BB6E00D4DD33 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = LD46697T67;
 					};
 					8450DE6B1CB8BB6E00D4DD33 = {
 						CreatedOnToolsVersion = 7.0;
@@ -260,7 +298,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA721481CB9B1DA0081BB81 /* watsi.json in Resources */,
 				8450DE661CB8BB6E00D4DD33 /* LaunchScreen.storyboard in Resources */,
+				1F8CC3C21CB9D9930018672B /* final.png in Resources */,
 				8450DE631CB8BB6E00D4DD33 /* Assets.xcassets in Resources */,
 				1FC531CC1CB9A9A70080A133 /* sweet_sound.mp3 in Resources */,
 				8450DE611CB8BB6E00D4DD33 /* Main.storyboard in Resources */,
@@ -283,6 +323,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E265674250A42806B944DF3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wakeupworld/Pods-wakeupworld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B12B9E39E430EE70296C0C6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wakeupworld/Pods-wakeupworld-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBFED738C8F38E23C2BA691F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8450DE541CB8BB6E00D4DD33 /* Sources */ = {
@@ -436,23 +524,31 @@
 		};
 		8450DE811CB8BB6E00D4DD33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774D178F397679B2AF95C629 /* Pods-wakeupworld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = wakeupworld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wakeup.wakeupworld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		8450DE821CB8BB6E00D4DD33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF523C3EC76E6D8ACC0590CD /* Pods-wakeupworld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = wakeupworld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wakeup.wakeupworld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

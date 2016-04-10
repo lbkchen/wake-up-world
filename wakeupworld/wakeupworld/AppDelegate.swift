@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -57,6 +58,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if (identifier == "Awake")
         {
+
+            let storyboard: UIStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+            let nc = storyboard.instantiateViewControllerWithIdentifier("toStory") as! UINavigationController
+            
+            let vc = storyboard.instantiateViewControllerWithIdentifier("storyVC")
+            nc.pushViewController(vc, animated: true)
+            
+            
+            
+            
             NSNotificationCenter.defaultCenter().postNotificationName("awakePressed", object: nil)
         }
         else if (identifier == "Snooze")

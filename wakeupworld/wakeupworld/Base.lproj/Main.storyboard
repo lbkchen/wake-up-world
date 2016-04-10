@@ -173,50 +173,21 @@
         <scene sceneID="w9u-OH-Da1">
             <objects>
                 <viewController id="0q8-Pg-Gvp" customClass="ListViewViewController" customModule="wakeupworld" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Q5n-gq-TzB"/>
-                        <viewControllerLayoutGuide type="bottom" id="W5Y-Bm-Onr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TcE-1S-Gpn">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose the people that you would like to help out tonight" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7Y-GO-YbS">
-                                <rect key="frame" x="20" y="122" width="560" height="67"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ER-aZ-9DF">
-                                <rect key="frame" x="240" y="74" width="120" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Random!"/>
-                                <connections>
-                                    <action selector="pressedRandom:" destination="0q8-Pg-Gvp" eventType="touchUpInside" id="q1r-ta-LyX"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[ PUT LIST VIEW HERE ]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vg-st-vy0">
-                                <rect key="frame" x="208" y="310" width="185" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="397" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Le-Oa-QiE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="5ER-aZ-9DF" firstAttribute="top" secondItem="Q5n-gq-TzB" secondAttribute="bottom" constant="10" id="1be-Dd-i6J"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="E7Y-GO-YbS" secondAttribute="leading" id="5Xo-Uj-Kfk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="E7Y-GO-YbS" secondAttribute="trailing" id="8Im-8Z-srW"/>
-                            <constraint firstItem="E7Y-GO-YbS" firstAttribute="top" secondItem="Q5n-gq-TzB" secondAttribute="bottom" constant="8" id="Iod-Nn-MbV"/>
-                            <constraint firstItem="E7Y-GO-YbS" firstAttribute="top" secondItem="5ER-aZ-9DF" secondAttribute="bottom" id="inp-Fj-OAy"/>
-                            <constraint firstItem="5ER-aZ-9DF" firstAttribute="centerX" secondItem="TcE-1S-Gpn" secondAttribute="centerX" id="nsu-QO-EEb"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Iod-Nn-MbV"/>
-                            </mask>
-                        </variation>
-                    </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="397" id="Un9-de-LlB">
+                                <rect key="frame" x="0.0" y="92" width="414" height="397"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Un9-de-LlB" id="C9i-Ri-cwr">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="396"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
                     <navigationItem key="navigationItem" id="BqU-vZ-qac">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="0Tm-zI-qwR">
                             <connections>
@@ -224,6 +195,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w9i-cb-7Cg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -278,15 +250,28 @@
                                     <segue destination="GgS-82-Hnh" kind="unwind" unwindAction="cancelToAlarmClockViewController:" id="OJu-Ue-4d8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxs-CH-AYY">
+                                <rect key="frame" x="0.0" y="64" width="414" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="Ilc-fY-di8"/>
+                                </constraints>
+                                <state key="normal" title="                      "/>
+                                <connections>
+                                    <segue destination="K3N-rU-cft" kind="presentation" id="sDw-I9-ZFM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TL5-Q7-lSz" firstAttribute="width" secondItem="V1W-Ec-pjm" secondAttribute="height" multiplier="57:200" id="5x2-W1-VWw"/>
                             <constraint firstItem="Dg5-h8-i2p" firstAttribute="top" secondItem="TL5-Q7-lSz" secondAttribute="bottom" constant="77" id="BxZ-eE-PxV"/>
+                            <constraint firstItem="Bxs-CH-AYY" firstAttribute="top" secondItem="Vdh-t9-LjN" secondAttribute="bottom" id="YD1-Sh-d3o"/>
+                            <constraint firstItem="Bxs-CH-AYY" firstAttribute="leading" secondItem="V1W-Ec-pjm" secondAttribute="leading" id="gGG-MX-KCk"/>
                             <constraint firstItem="TL5-Q7-lSz" firstAttribute="top" secondItem="Vdh-t9-LjN" secondAttribute="bottom" constant="392" id="m3I-dO-Y0o"/>
                             <constraint firstItem="TL5-Q7-lSz" firstAttribute="width" secondItem="V1W-Ec-pjm" secondAttribute="height" multiplier="9:25" id="olY-8Y-eB7"/>
                             <constraint firstItem="TL5-Q7-lSz" firstAttribute="width" secondItem="V1W-Ec-pjm" secondAttribute="height" multiplier="79:200" id="qpz-y1-8vC"/>
                             <constraint firstItem="TL5-Q7-lSz" firstAttribute="centerX" secondItem="V1W-Ec-pjm" secondAttribute="centerX" id="tjZ-r9-vuf"/>
+                            <constraint firstItem="Bxs-CH-AYY" firstAttribute="centerX" secondItem="V1W-Ec-pjm" secondAttribute="centerX" id="yTu-KA-OAm"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -297,6 +282,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="r6R-Sa-i7F"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qif-dT-8uV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="GgS-82-Hnh" userLabel="Exit" sceneMemberID="exit"/>
@@ -306,20 +292,33 @@
         <!--Story View Controller-->
         <scene sceneID="h6F-Uz-wFg">
             <objects>
-                <viewController id="s0L-X7-npd" customClass="StoryViewController" customModule="wakeupworld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="storyVC" storyboardIdentifier="storyVC" id="s0L-X7-npd" customClass="StoryViewController" customModule="wakeupworld" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="knt-fT-G5c"/>
                         <viewControllerLayoutGuide type="bottom" id="xsl-6a-Mq9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EJI-5s-tgN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="final.png" translatesAutoresizingMaskIntoConstraints="NO" id="nr5-q4-uTQ">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nr5-q4-uTQ" firstAttribute="leading" secondItem="EJI-5s-tgN" secondAttribute="leading" id="h8O-Wc-Nay"/>
+                            <constraint firstItem="nr5-q4-uTQ" firstAttribute="top" secondItem="knt-fT-G5c" secondAttribute="bottom" id="sQa-F5-p3Z"/>
+                            <constraint firstItem="nr5-q4-uTQ" firstAttribute="bottom" secondItem="xsl-6a-Mq9" secondAttribute="top" id="wm1-hh-Pcd"/>
+                            <constraint firstAttribute="trailing" secondItem="nr5-q4-uTQ" secondAttribute="trailing" id="xNL-gT-aWI"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5cg-zw-Kiy"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xuj-CN-FkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3258" y="77"/>
+            <point key="canvasLocation" x="4009" y="271"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VrR-RH-skT">
@@ -369,32 +368,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="k0j-Uf-86H">
+                            <datePicker contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="k0j-Uf-86H">
                                 <rect key="frame" x="-1" y="143" width="416" height="281"/>
                                 <date key="date" timeIntervalSinceReferenceDate="495086374.77898097">
                                     <!--2016-09-09 03:59:34 +0000-->
                                 </date>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIl-jN-eT0">
-                                <rect key="frame" x="135" y="565" width="144" height="48"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="canceltoAlarmClockViewController"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" red="0.13725490200000001" green="0.79607843140000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Swh-c5-Ow9" kind="unwind" unwindAction="cancelToListViewViewController:" id="G55-lO-jF7"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MM/DD/YY HH:MM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8r-W8-iSv">
-                                <rect key="frame" x="96" y="85" width="222" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGT-od-wd0">
-                                <rect key="frame" x="83" y="466" width="249" height="69"/>
+                                <rect key="frame" x="69" y="466" width="249" height="69"/>
                                 <color key="backgroundColor" red="1" green="0.65098039220000004" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <state key="normal" title="Set Alarm">
@@ -405,14 +386,35 @@
                                     <segue destination="JDt-QY-QcX" kind="presentation" identifier="setAlarmSegue" id="Zz3-je-aQO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIl-jN-eT0">
+                                <rect key="frame" x="121" y="565" width="144" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="canceltoAlarmClockViewController"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.13725490200000001" green="0.79607843140000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Swh-c5-Ow9" kind="unwind" unwindAction="cancelToListViewViewController:" id="OFr-QD-4O4"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="What time would you like to wake up?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrQ-Of-av8">
+                                <rect key="frame" x="34" y="87" width="319" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490200000001" green="0.79607843140000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="k0j-Uf-86H" firstAttribute="centerX" secondItem="7WR-zL-9Vf" secondAttribute="centerX" id="8hQ-jA-L9q"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XdX-fg-Ndl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="dateLabel" destination="x8r-W8-iSv" id="Wes-qh-aW3"/>
                         <outlet property="datePicker" destination="k0j-Uf-86H" id="Ad2-NC-LwZ"/>
                     </connections>
                 </viewController>
@@ -439,5 +441,26 @@
             </objects>
             <point key="canvasLocation" x="1796" y="-361"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Doe-mx-T52">
+            <objects>
+                <navigationController storyboardIdentifier="toStory" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K3N-rU-cft" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Qf-FJ-vEo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="s0L-X7-npd" kind="relationship" relationship="rootViewController" id="pOU-Bb-IRb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ony-Z9-Jl1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3197" y="271"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="final.png" width="402" height="713"/>
+    </resources>
 </document>

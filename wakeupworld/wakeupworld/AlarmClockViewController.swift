@@ -34,10 +34,10 @@ class AlarmClockViewController: UIViewController {
     func datePickerChanged(datePicker:UIDatePicker) {
         let dateFormatter = NSDateFormatter()
         
-        dateFormatter.dateFormat = "HH:mm"
-        
-        let strDate = dateFormatter.stringFromDate(datePicker.date)
-        dateLabel.text = strDate
+//        dateFormatter.dateFormat = "HH:mm"
+//        
+//        let strDate = dateFormatter.stringFromDate(datePicker.date)
+//        dateLabel.text = strDate
     }
     
     
