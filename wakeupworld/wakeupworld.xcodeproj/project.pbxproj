@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FC531CC1CB9A9A70080A133 /* sweet_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FC531CB1CB9A9A70080A133 /* sweet_sound.mp3 */; };
 		8450DE5C1CB8BB6E00D4DD33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE5B1CB8BB6E00D4DD33 /* AppDelegate.swift */; };
 		8450DE5E1CB8BB6E00D4DD33 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE5D1CB8BB6E00D4DD33 /* StartViewController.swift */; };
 		8450DE611CB8BB6E00D4DD33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8450DE5F1CB8BB6E00D4DD33 /* Main.storyboard */; };
@@ -14,13 +15,13 @@
 		8450DE661CB8BB6E00D4DD33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8450DE641CB8BB6E00D4DD33 /* LaunchScreen.storyboard */; };
 		8450DE711CB8BB6E00D4DD33 /* wakeupworldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE701CB8BB6E00D4DD33 /* wakeupworldTests.swift */; };
 		8450DE7C1CB8BB6E00D4DD33 /* wakeupworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450DE7B1CB8BB6E00D4DD33 /* wakeupworldUITests.swift */; };
-		84FC68F71CB8F6A000657C28 /* AlarmClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68F61CB8F6A000657C28 /* AlarmClockViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		84FC68F91CB8FCD900657C28 /* ListViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68F81CB8FCD900657C28 /* ListViewViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		84FC68FB1CB8FFD900657C28 /* GoodNightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68FA1CB8FFD900657C28 /* GoodNightViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		84FC68FD1CB9166E00657C28 /* TestSlider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC68FC1CB9166E00657C28 /* TestSlider.storyboard */; settings = {ASSET_TAGS = (); }; };
-		84FC68FF1CB93D1C00657C28 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		84FC69011CB945CD00657C28 /* WakeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC69001CB945CD00657C28 /* WakeButton.swift */; settings = {ASSET_TAGS = (); }; };
-		84FC69031CB9791600657C28 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC69021CB9791600657C28 /* LaunchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		84FC68F71CB8F6A000657C28 /* AlarmClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68F61CB8F6A000657C28 /* AlarmClockViewController.swift */; };
+		84FC68F91CB8FCD900657C28 /* ListViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68F81CB8FCD900657C28 /* ListViewViewController.swift */; };
+		84FC68FB1CB8FFD900657C28 /* GoodNightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68FA1CB8FFD900657C28 /* GoodNightViewController.swift */; };
+		84FC68FD1CB9166E00657C28 /* TestSlider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC68FC1CB9166E00657C28 /* TestSlider.storyboard */; };
+		84FC68FF1CB93D1C00657C28 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */; };
+		84FC69011CB945CD00657C28 /* WakeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC69001CB945CD00657C28 /* WakeButton.swift */; };
+		84FC69031CB9791600657C28 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC69021CB9791600657C28 /* LaunchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FC531CB1CB9A9A70080A133 /* sweet_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sweet_sound.mp3; path = ../../../sweet_sound.mp3; sourceTree = "<group>"; };
 		8450DE581CB8BB6E00D4DD33 /* wakeupworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wakeupworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8450DE5B1CB8BB6E00D4DD33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8450DE5D1CB8BB6E00D4DD33 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FC531CA1CB9A98F0080A133 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				1FC531CB1CB9A9A70080A133 /* sweet_sound.mp3 */,
+			);
+			name = support;
+			sourceTree = "<group>";
+		};
 		8450DE4F1CB8BB6E00D4DD33 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +134,7 @@
 				84FC68FC1CB9166E00657C28 /* TestSlider.storyboard */,
 				84FC68FE1CB93D1C00657C28 /* StoryViewController.swift */,
 				84FC69021CB9791600657C28 /* LaunchViewController.swift */,
+				1FC531CA1CB9A98F0080A133 /* support */,
 			);
 			path = wakeupworld;
 			sourceTree = "<group>";
@@ -251,6 +262,7 @@
 			files = (
 				8450DE661CB8BB6E00D4DD33 /* LaunchScreen.storyboard in Resources */,
 				8450DE631CB8BB6E00D4DD33 /* Assets.xcassets in Resources */,
+				1FC531CC1CB9A9A70080A133 /* sweet_sound.mp3 in Resources */,
 				8450DE611CB8BB6E00D4DD33 /* Main.storyboard in Resources */,
 				84FC68FD1CB9166E00657C28 /* TestSlider.storyboard in Resources */,
 			);
